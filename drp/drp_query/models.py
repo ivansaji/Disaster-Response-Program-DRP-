@@ -16,6 +16,7 @@ class Refugee(models.Model):
 
 class Volunteer(models.Model):
     name = models.CharField(max_length=25)
+    location = models.CharField(max_length=100)
     contact = models.IntegerField()
     alloted_to =  models.ForeignKey(Refugee, on_delete=models.CASCADE)
 

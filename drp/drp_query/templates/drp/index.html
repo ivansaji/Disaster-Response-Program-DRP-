@@ -1,0 +1,9 @@
+{% if latest_data %}
+    <ul>
+    {% for res in latest_data %}
+        <li><a href="/drp_query/{{ res.name }}/">{{ res.location }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No People are available.</p>
+{% endif %}
