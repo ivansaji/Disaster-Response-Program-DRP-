@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from .models import Volunteer,Refugee
 
 def index(request):
-    return HttpResponse("Hey Ivan")
+    return HttpResponse("Index")
 
 def volreg(request):
     #code for volunteer register

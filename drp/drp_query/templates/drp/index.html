@@ -1,9 +1,24 @@
-{% if latest_data %}
-    <ul>
-    {% for res in latest_data %}
-        <li><a href="/drp_query/{{ res.name }}/">{{ res.location }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No People are available.</p>
-{% endif %}
+
+<html>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            
+    </head>
+    <body>
+
+
+        {% if latest_data %}
+        <ul>
+            {% for res in latest_data %}
+                <li><a href="/drp_query/{{ res.name }}/">{{ res.location }}</a></li>
+            {% endfor %}
+        </ul>
+            {% else %}
+                <p>No People are available.</p>
+            {% endif %}
+    </body>
+    <footer>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </footer>
+</html>
