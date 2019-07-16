@@ -4,10 +4,10 @@ from .models import Refugee,Volunteer
 class RefugeeRegistration(forms.ModelForm):
     class Meta:
         model = Refugee
-        fields ={'name','contact','location','threat_rating','necessities'}
+        fields ={'name','contact','location'}
 
 class VolunteerRegistration(forms.ModelForm):
     class Meta:
-        model = Refugee
+        model = Volunteer
         fields ={'name','contact','location'}
 
